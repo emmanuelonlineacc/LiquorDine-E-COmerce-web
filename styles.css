@@ -229,16 +229,16 @@ body{
 
 
 .card h2{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 400;
     margin: 15px 0;
     padding: 10px 15px;
-    color: #333;}
+    color: #ffffff;}
 
 .card a{
     text-decoration: none;
-    color: #333;
-    border: #088178 solid 4px;
+    color: #ffffff;
+    border: #ffffff solid 4px;
     padding: 10px 20px;
     border-radius: 5px;
 }
