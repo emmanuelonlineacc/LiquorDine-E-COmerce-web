@@ -5,6 +5,8 @@
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
 }
+
+/*overall*/
 h1 {
   font-size: 50px;
   line-height: 64px;
@@ -45,6 +47,7 @@ body {
   width: 100%;
 }
 
+/*navigation bar*/
 #header {
   display: flex;
   justify-content: space-between;
@@ -91,6 +94,8 @@ body {
   color: #088178;
   transition: 0.3s ease;
 }
+
+/*hero/home section*/
 
 .hero {
   background-size: cover;
@@ -150,6 +155,7 @@ body {
 #hero h1 {
   color: #fff;
   font-weight: 200;
+  font-size: 40px;
 }
 #hero h2 {
   color: #fff;
@@ -157,17 +163,20 @@ body {
 }
 #hero h4 {
   color: #fff;
+  font-size: 40px;
 }
 
 #hero p {
   color: #fff;
   max-width: 600px;
   margin: 20px 0;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 50;
   text-align: center;
 }
+
+/*features section*/
 
 #feature {
   background-color: #f9f9f9;
@@ -215,6 +224,8 @@ body {
   transition: 0.3s ease;
 }
 
+/*category section*/
+
 #category {
   background-color: #f9f9f9;
   padding: 40px 0;
@@ -225,13 +236,13 @@ body {
 }
 
 .category h2 {
-  font-size: 70px;
+  font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .category p {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 40px;
   color: #555;
@@ -256,12 +267,12 @@ body {
   background-color: #ffffff;
 }
 
-/*nthchild(1)*/
+
 
 .card {
   position: relative;
-  width: 450px;
-  height: 500px;
+    width: 200px;
+    height: 250px;
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
@@ -331,29 +342,59 @@ body {
 
 }
 
-#product-1 .pro{
-    width: 30%;
-    min-width:250px;
+.pro{
+    width: 200px;
+    height: 400px;
     padding: 10px 12px;
     border:1px solid #cce7d0;
     border-radius: 20px;
     margin: 10px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
+    text-align: center;
+    display: inline-block;
 
 }
-
-#product-1 .pro img{
+ .pro img{
     width: 100%;
-    cursor: pointer;
+    height: 60%;
     border-radius: 20px;
+    object-fit: cover;
 }
 
-#product-1 .pro a{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+#product-1 .pro .des h5{
+    font-size: 12px;
+    color: #222;
+    font-weight: bold;
+    margin: 5px 0;
 }
+
+#product-1 .pro .des h4{
+    font-size: 10px;
+    color: #222;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.stars{
+    font-size: 16px;
+  color: #FFA500;
+}
+
+.btn-cart{
+    background: #000000;
+    height: 30px;
+  width: 60%;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background 0.3s, transform 0.2s;
+  justify-content: center;
+}
+
+
+
+
