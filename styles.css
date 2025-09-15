@@ -323,14 +323,14 @@ body {
 }
 
 .card:nth-child(2)::before {
-  background: url("Assets/Beercategory.jpg") center/cover no-repeat;
+  background: url("Assets/BeerCategory.jpg") center/cover no-repeat;
 }
 
 .card:nth-child(3)::before {
   background: url("Assets/Whiskyscategory.jpg") center/cover no-repeat;
 }
 .card:nth-child(4)::before {
-  background: url("Assets/Spiritscategory.jpg") center/cover no-repeat;
+  background: url("Assets/spiritscategory.jpg") center/cover no-repeat;
 }
 
 .card:nth-child(5)::before {
