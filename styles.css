@@ -61,6 +61,7 @@ body {
   backdrop-filter: blur(3px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   z-index: 1000;
+  height: 50px;
 }
 
 .cart {
@@ -97,6 +98,13 @@ body {
   transition: 0.3s ease;
 }
 
+#navbar li span{
+  background-color: coral;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+}
 /*hero/home section*/
 
 .hero {
@@ -593,4 +601,82 @@ body {
     flex-direction: column;
     gap: 8px;
   }
+}
+
+#banner{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation:sliders 5s infinite;
+  height: 50vh;
+  background-position: center;
+}
+
+@keyframes sliders {
+  0% {
+    background-image: url(Assets/Shipping1bg.jpg);
+  }
+  25% {
+    background-image: url(Assets/Shipping2bg.jpg);
+  }
+  50% {
+    background-image: url(Assets/Shipping3bg.jpg);
+  }
+  75% {
+    background-image: url(Assets/Shipping4bg.jpg);
+  }
+
+  100% {
+    background-image: url(Assets/side-view-cocktail-shots-with-slice-lemon-kiwi-slice-candles-bar-1.jpg);
+}
+}
+
+#banner h4{
+  color: #fff;
+  font-size: 16px;
+}
+
+#banner h2{
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.banner{
+  background: rgba(0, 0, 0, 0.10);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#banner span {
+  animation: blink 1s step-start infinite;
+  color: red;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.banner button{
+  width: 120px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.banner button:hover{
+    background-color: #fff;
+  color: #000000;
 }
