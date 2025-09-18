@@ -674,9 +674,101 @@ body {
   text-align: center;
   border-radius: 50px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .banner button:hover{
     background-color: #fff;
   color: #000000;
+}
+
+
+
+.offer {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr; /* better balance */
+  align-items: center;
+  padding: 3rem 5%;
+  gap: 2rem;
+  margin:40px 0;
+
+  /* Gradient background */
+background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
+  color: #111;
+}
+
+/* Images */
+.offer-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.offer-images img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.offer-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Text */
+.offer-text .tag {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(0,0,0,0.5);
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 0.7rem;
+}
+
+.offer-text h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #fff;
+}
+
+.offer-text .highlight {
+  color: #ffe600;
+}
+
+.offer-text p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 0.5rem 0 1.5rem;
+}
+
+/* Button */
+.offer .btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background: #000;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.offer .btn:hover {
+  background: #ffe600;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .offer {
+    grid-template-columns: 1fr;
+  }
+  .offer-images {
+    grid-template-columns: 1fr 1fr;
+  }
 }
